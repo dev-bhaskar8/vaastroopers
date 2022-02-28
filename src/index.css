@@ -1,13 +1,139 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Manrope', sans-serif;
+}
+body{
+  background-color: #E5E5E5;
+  
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 4em;
+  margin-left: 4em;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  background-color:rgba(174, 92, 255, 0.719);
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 8px;
+}
+nav > div > h2 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 120%;
+  color: #fff6f6;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+nav > img {
+  width: 80px;
+  height: 80px;
+}
+
+nav > div > button {
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 120%;
+  color: #000000;
+}
+
+
+
+.metaverse{
+  position: absolute;
+  height: 840px;
+  width: 840px;
+  right:0;
+  bottom: -0px;
+  border-radius: 0px;
+  z-index: -1;
+  background-image: url("../public/assets/bg.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.hero{
+  width: 570px;
+  height: 430px;
+  margin-left: 8em;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 110%;
+  /* or 88px */
+
+  letter-spacing: -0.05em;
+
+  color: #000000;
+}
+
+h3{
+  font-family: Manrope;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 160%;
+/* or 38px */
+
+
+color: #000000;
+}
+
+.frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 8px 8px 24px;
+
+  width: 520px;
+  height: 73px;
+  left: 135px;
+  top: 529px;
+
+
+  background: #FFFFFF;
+  border: auto;
+  box-sizing: border-box;
+  /* Button Shadow Light */
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.frame > input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  text-indent: 30px;
+  width: 100%;
+  background-image: url(../public/assets/ethlogo.svg);
+  background-repeat: no-repeat;
+}
+.frame > button {
+  background: #000000;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #FFFFFF;
+  /* padding: 0.7em;*/
+  margin: 0.5em; 
+
 }
