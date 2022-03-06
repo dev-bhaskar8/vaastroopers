@@ -1,12 +1,12 @@
 export default function About(){
    return(
-    <div className="hero">
-    <h1>About</h1>
-    <br />
-    <br />
-    <h3>
-    Disclaimer: Please note that anything written in this document should not be taken as financial advice. Axie is a bleeding-edge game that's incorporating unfinished, risky, and highly experimental technology. Development priorities, roadmap, and features are subject to radical overhaul based on research, traction, feedback from the community, and a myriad of other factors.
-    </h3>
-    </div>
+     <div className="hero" id="about">
+      <h1>About</h1>
+      <br />
+      <br />
+      <h3>
+      VaasTroopers is a group of degens that use their diverse set of skills to make an impact in the Metaverse. A place where passionate gamers participate in play-to-earn games, have fun, and make real connections with people, with the main goal of becoming a decentralized DAO that prioritizes its community above anything else.
+      </h3>
+      </div>
      )
 }

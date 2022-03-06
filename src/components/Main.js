@@ -3,7 +3,7 @@
 export default function Main(props){
 
     return(
-        <div>
+        <div id="home">
             <div className="hero">
                 <h1>Welcome to Vaastroopers</h1>
                 <br />
@@ -12,8 +12,14 @@ export default function Main(props){
                 <br />
                 <br />
                 <div className="frame">
-                <input type="email" placeholder="Your ERC20 address." value={props.address}></input>
-                <button>Future airdrops</button>
+                <input 
+                type="email" 
+                placeholder="Your ERC20 address." 
+                value={props.address}
+                onChange={(event) => props.setAddress(event.target.value)}
+                >
+                </input>
+                <button onClick={props.handleSubmit}>Future airdrops</button>
                 </div>
             </div>
             <div>
