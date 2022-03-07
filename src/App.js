@@ -26,7 +26,10 @@ function App() {
   function handleDisconnect(){
     setAddress("")    
   }
-  // window.ethereum.on('accountsChanged', handleConnect)
+
+  if(window.ethereum){
+    window.ethereum.on('accountsChanged', handleConnect)
+  }
 	
   const handleSubmit = (e) => {
 		e.preventDefault();
