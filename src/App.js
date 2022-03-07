@@ -12,8 +12,9 @@ toast.configure()
 function App() {
   const [address,setAddress] = React.useState("")
 
+
   function handleConnect(){
-    if(window.ethereum){
+    if(window.ethereum && window.ethereum.isMetaMask){
     window.ethereum.request({method:'eth_requestAccounts'})
     .then(result => setAddress(()=>result[0])).catch(err => console.log(err))
     }
@@ -25,8 +26,9 @@ function App() {
   function handleDisconnect(){
     setAddress("")    
   }
-  window.ethereum.on('accountsChanged', handleConnect);
-	const handleSubmit = (e) => {
+  // window.ethereum.on('accountsChanged', handleConnect)
+	
+  const handleSubmit = (e) => {
 		e.preventDefault();
 
 		const objt = { address };
