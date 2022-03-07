@@ -15,7 +15,7 @@ function App() {
   function handleConnect(){
     if(window.ethereum && window.ethereum.isMetaMask){
     window.ethereum.request({method:'eth_requestAccounts'})
-    .then(result => setAddress(()=>result[0]))
+    .then(result => setAddress(()=>result[0])).catch(err => console.log(err))
     }
     else{
       toast.error("Metamask not installed.",{position:toast.POSITION.BOTTOM_RIGHT})
