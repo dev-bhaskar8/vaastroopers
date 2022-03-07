@@ -39,7 +39,7 @@ function App() {
 			.then((response) => {
 				if(response.status === 200 && address!==""){
           toast("Address submitted successfully.",{position:toast.POSITION.BOTTOM_RIGHT})
-        }
+         }
 			});
 	};
 
