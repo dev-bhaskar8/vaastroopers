@@ -13,7 +13,7 @@ function App() {
   const [address,setAddress] = React.useState("")
 
   function handleConnect(){
-    if(window.ethereum && window.ethereum.isMetaMask){
+    if(window.ethereum){
     window.ethereum.request({method:'eth_requestAccounts'})
     .then(result => setAddress(()=>result[0])).catch(err => console.log(err))
     }
