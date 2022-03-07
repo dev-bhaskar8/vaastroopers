@@ -8,7 +8,7 @@ export default function Footer(){
                 <br/>
                 <div>
                     <img src="./assets/trooperlogo.png"/>
-                    <h2>Join the VaasTroopers Discord </h2>
+                    <h2>Email us at vaastroopers@gmail.com </h2>
                 </div>
                 <div>
                     <img className="vaas" src="./assets/vaas.png"/>
