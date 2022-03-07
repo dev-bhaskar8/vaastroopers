@@ -37,7 +37,7 @@ function App() {
 				objt
 			)
 			.then((response) => {
-				if(response.status = 200 && address!=""){
+				if(response.status === 200 && address!===""){
           toast("Address submitted successfully.",{position:toast.POSITION.BOTTOM_RIGHT})
         }
 			});
